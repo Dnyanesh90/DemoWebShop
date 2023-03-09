@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo Web Shop Application">
+    <listeners>
+		<listener class-name="UtilsLayer.ListenerClass"></listener>
+	</listeners>
+    <test thread-count="5" name="Login Page Test Cases">
+        <groups>
+			<run>
+				<include name="LoginPage"></include>
+			</run>
+		</groups>
+        <classes>
+             <class name="TestLayer.LoginPageTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
